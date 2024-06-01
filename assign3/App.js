@@ -15,7 +15,7 @@ const flatListItems = [
   {
     firstActivity: "Exercise",
     activityNumber: "12 Tasks",
-    image1: require("./assets/learner.png"),
+    image1: require("./assets/sitter.png"),
     id: "1",
     secondActivity: "Study",
     activityNumber2: "12 Tasks",
@@ -23,70 +23,70 @@ const flatListItems = [
   },
 ];
 
-const profile = require('./assets/profile.png')
+const profile = require("./assets/profile.png");
 
 const sectionItems = [
   {
-    sectionData: "Mobile App Development",
+    sectionItem: "Mobile App Development",
     id: "3",
   },
   {
-    sectionData: "Web Development",
+    sectionItem: "Web Development",
     id: "4",
   },
   {
-    sectionData: "Push Ups",
+    sectionItem: "Push Ups",
     id: "5",
   },
   {
-    sectionData: "Eating",
+    sectionItem: "Eating",
     id: "6",
   },
   {
-    sectionData: "Coding",
+    sectionItem: "Coding",
     id: "7",
   },
   {
-    sectionData: "Remote Work",
+    sectionItem: "Remote Work",
     id: "8",
   },
   {
-    sectionData: "Drive",
+    sectionItem: "Drive",
     id: "9",
   },
   {
-    sectionData: "Sit up",
+    sectionItem: "Sit up",
     id: "10",
   },
   {
-    sectionData: "Sing",
+    sectionItem: "Sing",
     id: "11",
   },
   {
-    sectionData: "Wash",
+    sectionItem: "Wash",
     id: "12",
   },
   {
-    sectionData: "Relax",
+    sectionItem: "Relax",
     id: "13",
   },
   {
-    sectionData: "Walk",
+    sectionItem: "Walk",
     id: "14",
   },
   {
-    sectionData: "Push Ups",
+    sectionItem: "Push Ups",
     id: "15",
   },
   {
-    sectionData: "Laugh",
+    sectionItem: "Laugh",
     id: "16",
   },
 ];
 
 const Index = () => {
   return (
-    <SafeAreaView style={{ backgroundColor: "#fef3c7" }}>
+    <SafeAreaView style={{ backgroundColor: "#e0e7ff" }}>
       <StatusBar barStyle="light-content" />
       <ScrollView>
         <View style={styles.headerContent}>
@@ -98,13 +98,12 @@ const Index = () => {
         </View>
 
         <View>
-          <View style={[{ backgroundColor: "#fef3c7" }, { borderRadius: 10 }]}>
+          <View style={[{ backgroundColor: "#e0e7ff" }, { borderRadius: 10 }]}>
             <TextInput
-              placeholder="Search"
+              placeholder="Search..."
               placeholderTextColor={"#000000"}
               style={{
                 borderWidth: 1,
-                borderColor: "black",
                 padding: 8,
                 margin: 10,
               }}
@@ -116,10 +115,10 @@ const Index = () => {
           <View>
             <FlatList
               data={flatListItems}
-              keyExtractor={(item, index) => item.id}
+              keyExtractor={(item) => item.id}
               renderItem={({ item }) => (
                 <View style={styles.containerView}>
-                  <View style={{ backgroundColor: "#fef3c7" }}>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
                     <View style={styles.microContainer}>
                       <Text style={styles.multiSize}>{item.firstActivity}</Text>
                       <Text>{item.activityNumber}</Text>
@@ -127,7 +126,7 @@ const Index = () => {
                     <Image source={item.image1} style={styles.imageSize} />
                   </View>
 
-                  <View style={{ backgroundColor: "#fef3c7" }}>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
                     <View style={styles.microContainer}>
                       <Text style={styles.multiSize}>
                         {item.secondActivity}
@@ -136,7 +135,16 @@ const Index = () => {
                     </View>
                     <Image source={item.image2} style={styles.imageSize} />
                   </View>
-                  <View style={{ backgroundColor: "#fef3c7" }}>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
+                    <View style={styles.microContainer}>
+                      <Text style={styles.multiSize}>
+                        {item.secondActivity}
+                      </Text>
+                      <Text>{item.activityNumber2}</Text>
+                    </View>
+                    <Image source={item.image1} style={styles.imageSize} />
+                  </View>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
                     <View style={styles.microContainer}>
                       <Text style={styles.multiSize}>
                         {item.secondActivity}
@@ -145,7 +153,7 @@ const Index = () => {
                     </View>
                     <Image source={item.image2} style={styles.imageSize} />
                   </View>
-                  <View style={{ backgroundColor: "#fef3c7" }}>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
                     <View style={styles.microContainer}>
                       <Text style={styles.multiSize}>
                         {item.secondActivity}
@@ -154,7 +162,7 @@ const Index = () => {
                     </View>
                     <Image source={item.image2} style={styles.imageSize} />
                   </View>
-                  <View style={{ backgroundColor: "#fef3c7" }}>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
                     <View style={styles.microContainer}>
                       <Text style={styles.multiSize}>
                         {item.secondActivity}
@@ -163,7 +171,7 @@ const Index = () => {
                     </View>
                     <Image source={item.image2} style={styles.imageSize} />
                   </View>
-                  <View style={{ backgroundColor: "#fef3c7" }}>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
                     <View style={styles.microContainer}>
                       <Text style={styles.multiSize}>
                         {item.secondActivity}
@@ -172,23 +180,14 @@ const Index = () => {
                     </View>
                     <Image source={item.image2} style={styles.imageSize} />
                   </View>
-                  <View style={{ backgroundColor: "#fef3c7" }}>
+                  <View style={{ backgroundColor: "#e0e7ff" }}>
                     <View style={styles.microContainer}>
                       <Text style={styles.multiSize}>
                         {item.secondActivity}
                       </Text>
                       <Text>{item.activityNumber2}</Text>
                     </View>
-                    <Image source={item.image2} style={styles.imageSize} />
-                  </View>
-                  <View style={{ backgroundColor: "#fef3c7" }}>
-                    <View style={styles.microContainer}>
-                      <Text style={styles.multiSize}>
-                        {item.secondActivity}
-                      </Text>
-                      <Text>{item.activityNumber2}</Text>
-                    </View>
-                    <Image source={item.image2} style={styles.imageSize} />
+                    <Image source={item.image1} style={styles.imageSize} />
                   </View>
                 </View>
               )}
