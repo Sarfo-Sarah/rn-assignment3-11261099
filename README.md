@@ -1,3 +1,7 @@
+![image3](https://github.com/Sarfo-Sarah/rn-assignment3-11261099/assets/151846528/8a8d0cf8-5978-40a3-8a24-aeb6154d559e)
+![image2](https://github.com/Sarfo-Sarah/rn-assignment3-11261099/assets/151846528/bededa66-1572-4e05-81a8-f4c5d721cf8a)
+![image1](https://github.com/Sarfo-Sarah/rn-assignment3-11261099/assets/151846528/f0b43900-9cba-4e28-ab22-f0ac04548c31)
+![image4](https://github.com/Sarfo-Sarah/rn-assignment3-11261099/assets/151846528/dbbebdf6-aba8-4f09-bb0e-17a90dcc798f)
 # rn-assignment3-11261099
 Assignment 3 repo  for react native
 
